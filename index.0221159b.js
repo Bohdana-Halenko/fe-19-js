@@ -1,0 +1,2 @@
+const t=document.querySelector(".time__calculator_input"),e=document.querySelector(".time__calculator_btn"),o=document.querySelector(".time__calculator_text");e.addEventListener("click",(()=>{const e=t.value;if(!e||isNaN(e)||e<0)return void(o.textContent="Будь ласка, введіть коректне число!");const c=parseInt(e,10),n=Math.floor(c/1440),r=Math.floor(c%1440/60),l=c%60;o.textContent=`${n} дн. ${r} : ${l}`}));
+//# sourceMappingURL=index.0221159b.js.map
