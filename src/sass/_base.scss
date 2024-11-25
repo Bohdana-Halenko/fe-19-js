@@ -1,0 +1,46 @@
+// fonts
+// font-family: "Montserrat Alternates", sans-serif;
+// font-family: "Inter", sans-serif;
+// font-family: "Sacramento", sans-serif;
+
+// base styles
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 1090px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// colors
+$text-color: #000000;
+$header-hover: #F1F1F1;
+$line-color: #000000;
+$button-background: #000000;
+$button-text: #FFFFFF;
+$input-background: #D7D7D7;
+$input-text: #7E7E7E;
+$true-color: #039900;
+$false-color: #990000;
+$football-field: #5ABB58;
+$empty-card-background: #D9D9D9;
