@@ -3,6 +3,21 @@
 // font-family: "Inter", sans-serif;
 // font-family: "Sacramento", sans-serif;
 
+// colors
+$text-color: #000000;
+$light-background: #ffffff;
+$dark-background: #003161;
+$header-hover: #F1F1F1;
+$line-color: #000000;
+$button-background: #000000;
+$button-text: #FFFFFF;
+$input-background: #D7D7D7;
+$input-text: #7E7E7E;
+$true-color: #039900;
+$false-color: #990000;
+$football-field: #5ABB58;
+$empty-card-background: #D9D9D9;
+
 // base styles
 *{
     box-sizing: border-box;
@@ -10,6 +25,9 @@
 body{
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
+}
+.main{
+    background-image: url(/src/img/main-background.png);
 }
 ul{
     list-style: none;
@@ -29,19 +47,6 @@ button{
 .container{
     width: 1090px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 36px 15px;
+    background-color: $light-background;
 }
-
-// colors
-$text-color: #000000;
-$light-background: #ffffff;
-$header-hover: #F1F1F1;
-$line-color: #000000;
-$button-background: #000000;
-$button-text: #FFFFFF;
-$input-background: #D7D7D7;
-$input-text: #7E7E7E;
-$true-color: #039900;
-$false-color: #990000;
-$football-field: #5ABB58;
-$empty-card-background: #D9D9D9;
