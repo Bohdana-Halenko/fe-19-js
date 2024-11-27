@@ -12,7 +12,7 @@
                                 <a id="dropBtn" class="header__text">
                                     Інтерактив <span class="header__rotate-dropdown">></span>
                                 </a>
-                                <ul class="header__dropdown-content" id="dropdownContent">
+                                <ul class="header__dropdown-content header__show" id="dropdownContent">
                                     <li class="header__dropdown-content-item">
                                             <a href="#" class="header__text header__dropdown-link">
                                             Числовий
@@ -45,8 +45,33 @@
                     <input id="headerCheckbox" class="header__checkbox" type="checkbox">
                     <span class="header__slider"></span>
                 </label>
-                 <p class="header__welcome-user-name">Welcome, !</p>
+                 <button id="headerOpenModal" class="header__welcome-user-name" header__data-modal-open>Натисніть щоб залогінитись!</button>
             </li>
         </ul>
     </div>
+    <!-- modal -->
+     <div class="header__backdrop header__is-hidden" header__data-modal>
+        <div class="header__modal">
+            <button class="header__close-modal-btn" header__data-modal-close>
+                <svg class="header__close-modal-svg">
+                    <use href="/src/img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="header__modal-content">
+                <div class="header__modal-content-positioning">
+                    <p class="header__modal-text">Привіт!</p>
+                    <p class="header__modal-text">Ви потрапили на сайт інтерактивних ігор та завдань</p>
+                    <p class="header__modal-text">Надіємось, що вам сподобається і ви отримаєте позитивні емоції!</p>
+                    <p class="header__modal-text">Бажаємо Вам гарно провести час!</p>
+                </div>
+                <form class="header__modal-form">
+                    <p class="header__modal-text">Введіть своє ім’я:</p>
+                    <input id="inputName" class="header__modal-form-input" placeholder="Ваше ім’я..." type="text">
+                    <button id="saveNameBtn" class="header__button">
+                        Зберегти
+                    </button>
+                </form>
+            </div>
+        </div>
+     </div>
 </header>
