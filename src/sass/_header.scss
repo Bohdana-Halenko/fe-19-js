@@ -113,3 +113,83 @@ input:checked + .header__slider:before {
 .header__show{
   display: block;
 }
+// modal
+.header__backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.70);
+  transition: opacity 250ms;
+}
+.header__backdrop.header__is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.header__modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  width: 576px;
+  height: 316px;
+  background-color: $light-background;
+}
+.header__close-modal-btn{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__close-modal-svg{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+}
+.header__welcome-user-name{
+  background-color: transparent;
+  border: none;
+}
+.header__modal-content{
+  margin: 46px 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+.header__modal-content-positioning{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__modal-text{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+.header__modal-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.header__modal-form-input{
+  padding: 10px 90px 10px 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: $input-background;
+}
+.header__button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: $light-background;
+  background-color: $button-background;
+}
