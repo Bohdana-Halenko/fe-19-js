@@ -1,10 +1,9 @@
 .header{
   background-color: $light-background;
-  border: 1px red solid;
 }
 .header__positioning-list{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  // margin-top: 20px;
+  // margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +56,6 @@
 }
 .header__dropdown-content-item{
   width: 160px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +63,6 @@
   overflow: auto;
 }
 .header__dropdown-content-item:nth-child(3){
-  background-color: green;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -73,7 +70,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: $light-background;
-  border: 1px solid red;
 }
 .header__input{
   position: relative;
