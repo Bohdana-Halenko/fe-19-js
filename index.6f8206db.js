@@ -1,2 +1,0 @@
-!function(){var t=document.getElementById("dino"),e=document.getElementById("cactus");document.addEventListener("keydown",(function(e){!function(){"jump"!=t.classList&&t.classList.add("jump");setTimeout((function(){t.classList.remove("jump")}),300)}()}));setInterval((function(){var n=parseInt(window.getComputedStyle(t).getPropertyValue("top")),o=parseInt(window.getComputedStyle(e).getPropertyValue("left"));o<50&&o>0&&n>=140&&alert("GAME OVER!!")}),10)}();
-//# sourceMappingURL=index.6f8206db.js.map
