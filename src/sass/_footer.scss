@@ -1,0 +1,24 @@
+.footer{
+    &__positioning{
+        display: flex;
+        gap: 160px;
+        align-items: center;
+    }
+    &__logo-img{
+        width: 165px; 
+        height: 70px;
+    }
+    &__adresse-list{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__adresse-link{
+        font-size: 11px;
+    }
+}
+.container.footer__positioning{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
