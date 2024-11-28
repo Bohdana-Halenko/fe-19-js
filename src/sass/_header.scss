@@ -2,8 +2,6 @@
   background-color: $light-background;
 }
 .header__positioning-list{
-  // margin-top: 20px;
-  // margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +15,10 @@
   display: flex;
   gap: 50px;
   align-items: center;
+}
+.header__logo-img{
+  width: 93px;
+  height: 38px;
 }
 .header__nav-list{
   display: flex;
@@ -122,6 +124,7 @@ input:checked + .header__slider:before {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.70);
   transition: opacity 250ms;
+  z-index: 1;
 }
 .header__backdrop.header__is-hidden{
   opacity: 0;
@@ -129,6 +132,7 @@ input:checked + .header__slider:before {
   pointer-events: none;
 }
 .header__modal{
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;

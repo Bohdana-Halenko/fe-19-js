@@ -60,12 +60,16 @@ const saveNameBtn = document.getElementById('saveNameBtn');
 const inputName = document.getElementById('inputName');
 const setName = document.getElementById('headerOpenModal');
 
-saveNameBtn.preventDefault();
-
 const changeName = (e) => {
+    e.preventDefault();
     const newName = inputName.value.trim();
-    setName.textContent = `Welcome, ${newName}!`;
+    if(newName){
+        setName.textContent = `Welcome, ${newName}!`;
+    } else{
+        alert("Будь ласка, введіть ім'я!");
+    }
     inputName.value = '';
-    alert(newName);
+    document.querySelector('[header__data-modal]').classList.add('header__is-hidden');
+    document.body.classList.remove('header__no-scroll');
 };
-saveNameBtn.addEventListener('click', changeName());
+saveNameBtn.addEventListener('click', changeName);

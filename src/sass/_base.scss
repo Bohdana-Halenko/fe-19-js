@@ -25,6 +25,7 @@ $empty-card-background: #D9D9D9;
 body{
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
+    // background-color: $dark-background;
 }
 .main{
     background-image: url(/src/img/main-background.png);
@@ -49,4 +50,5 @@ button{
     margin: 0 auto;
     padding: 36px 15px;
     background-color: $light-background;
+    // background-color: transparent;
 }
