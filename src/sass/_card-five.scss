@@ -23,9 +23,13 @@
     
 }
 
-// .time__calculator_line{    
-    
-// }
+.time__calculator_title{
+    font-size: 12px;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 36px;
+}
 
 .time__calculator_menu{
     display: flex;
@@ -51,7 +55,7 @@
 }
 
 .time__calculator_container{
-    border-bottom: 1px solid $line-color;
+    border-top: 1px solid $line-color;
     padding-top: 36px;
     padding-bottom: 36px;
     
