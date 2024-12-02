@@ -6,7 +6,7 @@
 // colors
 $text-color: #000000;
 $light-background: #ffffff;
-$dark-background: #003161;
+$dark-background: #114f8d;
 $header-hover: #F1F1F1;
 $line-color: #000000;
 $button-background: #000000;
@@ -23,12 +23,13 @@ $empty-card-background: #D9D9D9;
     box-sizing: border-box;
 }
 body{
+    background-image: url(/src/img/main-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
-    // background-color: $dark-background;
-}
-.main{
-    background-image: url(/src/img/main-background.png);
+    background-color: $light-background;
 }
 ul{
     list-style: none;
@@ -50,5 +51,5 @@ button{
     margin: 0 auto;
     padding: 36px 15px;
     background-color: $light-background;
-    // background-color: transparent;
+    transition: background-color 0.15s ease;
 }
