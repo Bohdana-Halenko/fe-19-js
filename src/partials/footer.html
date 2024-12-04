@@ -8,7 +8,7 @@
                 <a href="tel:+381234567890" class="footer__adresse-link">Тел: +38 (123) 456 78 90</a>
             </li>
             <li class="footer__adresse-item">
-                <a href="mailto:codingmagic@gmail.com" class="footer__adresse-link">E-Mail:codingmagic@gmail.com</a>
+                <a href="mailto:codingmagic@gmail.com" class="footer__adresse-link">EMail:codingmagic@gmail.com</a>
             </li>
             <li class="footer__adresse-item">
                 <a href="#" class="footer__adresse-link">Facebook: CodingMagic</a>
@@ -21,9 +21,21 @@
             </li>
         </ul>
         <form class="footer__form">
-            <input placeholder="Ваша ел. адреса..." class="footer__form-iput" type="text">
-            <button class="footer__form-button">Підписатись</button>
+            <input id="footerInput" placeholder="Ваша ел. адреса..." class="footer__form-iput" type="email">
+            <button id="footerInputCheck" class="footer__form-button" footer__data-modal-open>Підписатись</button>
             <p class="footer__copyright">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
         </form>
+        <div class="footer__backdrop footer__is-hidden" footer__data-modal>
+            <div class="footer__modal">
+                <button class="footer__close-modal-btn" footer__data-modal-close>
+                    <svg class="footer__close-modal-svg">
+                        <use href="/src/img/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="footer__modal-content">
+                    <h2 id="footerWelcome" class="footer__modal-text"></h2>
+                </div>
+            </div>
+         </div>
     </div>
 </footer>
