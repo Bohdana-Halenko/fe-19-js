@@ -1,0 +1,2 @@
+!function(){var t=document.getElementById("field"),e=document.getElementById("ball");t.addEventListener("click",(function(n){var i=t.getBoundingClientRect(),a=e.offsetWidth/2,f=n.clientX-i.left-a,o=n.clientY-i.top-a;f=Math.max(0,Math.min(f,t.offsetWidth-e.offsetWidth)),o=Math.max(0,Math.min(o,t.offsetHeight-e.offsetHeight)),e.style.transform="translate(".concat(f,"px, ").concat(o,"px)")}))}();
+//# sourceMappingURL=index.5f6ee903.js.map

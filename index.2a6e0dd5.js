@@ -1,0 +1,2 @@
+const t=document.getElementById("field"),e=document.getElementById("ball");t.addEventListener("click",(n=>{const i=t.getBoundingClientRect(),f=e.offsetWidth/2;let l=n.clientX-i.left-f,o=n.clientY-i.top-f;l=Math.max(0,Math.min(l,t.offsetWidth-e.offsetWidth)),o=Math.max(0,Math.min(o,t.offsetHeight-e.offsetHeight)),e.style.transform=`translate(${l}px, ${o}px)`}));
+//# sourceMappingURL=index.2a6e0dd5.js.map
