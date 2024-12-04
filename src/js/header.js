@@ -25,7 +25,21 @@ menuItems.forEach(item => {
 });
 
 // Зміна теми
-const bgContainer = document.querySelectorAll('.container');
+// const bgContainer = document.querySelectorAll('.container');
+// const themeSwitcher = document.getElementById('headerCheckbox');
+
+// themeSwitcher.addEventListener('click', () => {
+//     bgContainer.forEach((bgContainer) => {
+//         const currentColor = window.getComputedStyle(bgContainer).backgroundColor;
+
+//         if(currentColor === 'rgb(255, 255, 255)'){
+//             bgContainer.style.backgroundColor = '#114f8d'; 
+//         } else{
+//             bgContainer.style.backgroundColor = '#fff';
+//         }
+//       });
+// });
+const bgContainer = document.querySelectorAll('#body');
 const themeSwitcher = document.getElementById('headerCheckbox');
 
 themeSwitcher.addEventListener('click', () => {

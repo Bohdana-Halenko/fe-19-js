@@ -1,94 +1,105 @@
-.footer{
-    &__positioning{
-        display: flex;
-        gap: 140px;
-        align-items: center;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    &__logo-img{
-        width: 165px; 
-        height: 70px;
-    }
-    &__adresse-list{
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-    &__adresse-link{
-        font-size: 12px;
-        color: $text-color;
-    }
-    &__form{
-        width: 350px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    &__form-iput{
-        border: none;
-        border-radius: 20px;
-        padding: 10px;
-        width: 204px;
-        height: 35px;
-        margin-right: 36px;
-        background-color: $input-background;
-    }
-    &__form-button{
-        border: none;
-        background-color: $button-background;
-        border-radius: 20px;
-        font-size: 12px;
-        color: $button-text;
-        padding: 10px;
-    }
-    &__copyright{
-        font-size: 6px;
-        color: $text-color;
-        font-weight: 400;
-        margin-top: 18px;
-    }
+.footer {
+  &__positioning {
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__logo-img {
+    width: 165px;
+    height: 70px;
+  }
+  &__adresse-list {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__adresse-link {
+    font-size: 12px;
+    color: $text-color;
+  }
+  &__form {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__form-iput {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 204px;
+    height: 35px;
+    margin-right: 36px;
+    background-color: $input-background;
+  }
+  &__form-button {
+    border: none;
+    background-color: $button-background;
+    border-radius: 20px;
+    font-size: 12px;
+    color: $button-text;
+    padding: 10px;
+  }
+  &__copyright {
+    font-size: 6px;
+    color: $text-color;
+    font-weight: 400;
+    margin-top: 18px;
+  }
 }
 
 // modal
-.footer__backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.70);
-    transition: opacity 250ms;
-    z-index: 1;
-  }
-  .footer__backdrop.footer__is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .footer__modal{
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    width: 576px;
-    height: 316px;
-    background-color: $light-background;
-  }
-  .footer__close-modal-btn{
-    background-color: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer__close-modal-svg{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 25px;
-    height: 25px;
-  }
+.footer__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 250ms;
+  z-index: 1;
+}
+.footer__backdrop.footer__is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.footer__modal {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  width: 576px;
+  height: 316px;
+  background-color: $light-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/img/footer-modal-back.png);
+  background-repeat: no-repeat;
+  background-position: center bottom 90px;
+  background-size: 453px 127px;
+}
+.footer__close-modal-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__close-modal-svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+}
+.footer__modal-text {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;    
+}

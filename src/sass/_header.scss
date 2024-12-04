@@ -1,5 +1,5 @@
 .header{
-  background-color: $light-background;
+  background-color: transparent;
 }
 .header__positioning-list{
   display: flex;
@@ -141,6 +141,9 @@ input:checked + .header__slider:before {
   width: 576px;
   height: 316px;
   background-color: $light-background;
+  background-image: url(/src/img/footer-modal-back.png);
+  background-repeat: no-repeat;
+  background-position: center bottom 56px;
 }
 .header__close-modal-btn{
   background-color: transparent;
