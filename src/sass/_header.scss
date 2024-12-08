@@ -1,5 +1,6 @@
 .header{
-  background-color: transparent;
+  background-color: $light-background;
+  transition: background-color 0.2s ease;
 }
 .header__positioning-list{
   display: flex;

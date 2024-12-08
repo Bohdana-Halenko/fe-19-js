@@ -1,4 +1,6 @@
 .footer {
+  background-color: $light-background;
+  transition: background-color 0.2s ease;
   &__positioning {
     display: flex;
     gap: 140px;
