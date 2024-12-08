@@ -1,0 +1,2 @@
+document.getElementById("compareBtn").addEventListener("click",(function(){const t=Math.floor(11*Math.random()),e=parseInt(document.getElementById("userInput").value),n=document.getElementById("resultText");t===e?n.textContent=`Вітаю, ви вгадали! Загадане число - ${t}.`:t!==e?n.textContent=`Ви не вгадали! Загадане число - ${t}.`:alert("Enter a number")}));
+//# sourceMappingURL=index.b02371ff.js.map
