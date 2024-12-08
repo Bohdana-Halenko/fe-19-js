@@ -1,0 +1,55 @@
+.game__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  
+  .game__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game__input-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin: 0px 101px 36px 432px;
+  }
+  
+  #userInput {
+    background-color: $input-background;
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 1px 3px 0px 1px rgba(0,0,0,0.3);
+    outline: none;
+  }
+  
+  #userInput::placeholder {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    size: 12px;
+    line-height: 14.63px;
+  }
+  .game__compare-icon{
+    width: 15px;
+    height: 15px;
+    fill: $light-background;
+    margin: 4px;
+  }
+  
+  #compareBtn {
+    border: none;
+    background-color: $button-background;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 3px 0px 1px rgba(0,0,0,0.3);
+  }
+  
+  #resultText { 
+    margin-bottom: 36px;
+    margin-left: 101px;
+  }
