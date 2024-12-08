@@ -25,7 +25,30 @@ menuItems.forEach(item => {
 });
 
 // Зміна теми
-// const bgContainer = document.querySelectorAll('.container');
+const bgContainer = document.querySelectorAll('.container');
+const themeSwitcher = document.getElementById('headerCheckbox');
+const footer = document.getElementById('footer');
+const header = document.getElementById('header');
+const body = document.getElementById('body');
+
+themeSwitcher.addEventListener('click', () => {
+    bgContainer.forEach((bgContainer) => {
+        const currentColor = window.getComputedStyle(bgContainer).backgroundColor;
+
+        if(currentColor === 'rgb(255, 255, 255)'){
+            bgContainer.style.backgroundColor = '#2e4545'; 
+            footer.style.backgroundColor = '#2e4545'; 
+            header.style.backgroundColor = '#2e4545'; 
+            body.style.backgroundColor = '#2f2c2c';
+        } else{
+            bgContainer.style.backgroundColor = '#fff';
+            footer.style.backgroundColor = '#fff'; 
+            header.style.backgroundColor = '#fff'; 
+            body.style.backgroundColor = '#f0ecec';
+        }
+      });
+});
+// const bgContainer = document.querySelectorAll('#body');
 // const themeSwitcher = document.getElementById('headerCheckbox');
 
 // themeSwitcher.addEventListener('click', () => {
@@ -39,20 +62,6 @@ menuItems.forEach(item => {
 //         }
 //       });
 // });
-const bgContainer = document.querySelectorAll('#body');
-const themeSwitcher = document.getElementById('headerCheckbox');
-
-themeSwitcher.addEventListener('click', () => {
-    bgContainer.forEach((bgContainer) => {
-        const currentColor = window.getComputedStyle(bgContainer).backgroundColor;
-
-        if(currentColor === 'rgb(255, 255, 255)'){
-            bgContainer.style.backgroundColor = '#114f8d'; 
-        } else{
-            bgContainer.style.backgroundColor = '#fff';
-        }
-      });
-});
 
 // modal
 (() => { 

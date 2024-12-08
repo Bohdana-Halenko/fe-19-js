@@ -4,9 +4,10 @@
 // font-family: "Sacramento", sans-serif;
 
 // colors
+$body-background: #f0ecec;
 $text-color: #000000;
 $light-background: #ffffff;
-$dark-background: #114f8d;
+$dark-background: #2e4545;
 $header-hover: #F1F1F1;
 $line-color: #000000;
 $button-background: #000000;
@@ -24,12 +25,13 @@ $empty-card-background: #D9D9D9;
 }
 body{
     background-image: url(/src/img/main-background.png);
-    background-position: center;
+    background-position: center top 114px;
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
-    background-color: $light-background;
+    background-color: $body-background;
+    transition: background-color 0.2s ease;
 }
 ul{
     list-style: none;
@@ -50,6 +52,6 @@ button{
     width: 1090px;
     margin: 0 auto;
     padding: 36px 15px;
-    background-color: transparent;
-    transition: background-color 0.15s ease;
+    background-color: $light-background;    
+    transition: background-color 0.2s ease;
 }

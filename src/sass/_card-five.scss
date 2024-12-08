@@ -4,7 +4,7 @@
     border-bottom-left-radius: 20px;
     padding: 10px;
     border: none;
-    background-color: #D7D7D7;
+    background-color: $input-background;
     font-size: 12px;
     font-weight: 400;
     
@@ -59,8 +59,5 @@
 
 .time__calculator_container{
     border-top: 1px solid $line-color;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    
 }
 
