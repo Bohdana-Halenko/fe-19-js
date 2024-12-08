@@ -12,15 +12,18 @@
 
 .time__calculator_btn{
     position: absolute;
-    padding: 10px;
+    padding: 8px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: none;
-    background-color: $text-color;
-    color: $button-text;
+    background-color: $button-background;    
     font-size: 12px;
     font-weight: 400;
     
+}
+
+.time__calculator_btn_icon{
+    fill: $button-text;
 }
 
 .time__calculator_title{
