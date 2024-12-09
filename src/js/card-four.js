@@ -1,4 +1,4 @@
-let operation = '';
+let operation = ''; 
 
 function setOperation(op) {
   operation = op;
@@ -10,8 +10,9 @@ function calculate() {
   let result = '';
 
   if (isNaN(num1) || isNaN(num2)) {
-    result = 'Помилка';
+    result = 'Помилка: введіть числа';
   } else {
+
     switch (operation) {
       case '+':
         result = num1 + num2;
@@ -23,10 +24,10 @@ function calculate() {
         result = num1 * num2;
         break;
       case '/':
-        result = num2 !== 0 ? num1 / num2 : 'Ділення на 0';
+        result = num2 !== 0 ? num1 / num2 : 'Помилка: ділення на 0';
         break;
       default:
-        result = 'Оберіть операцію';
+        result = 'Помилка: оберіть операцію';
     }
   }
 
