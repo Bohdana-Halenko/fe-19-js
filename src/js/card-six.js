@@ -1,10 +1,10 @@
 const dino = document.qwerySelector('.dino');
-const player = document.qwerySelector('.dino_player');
-const cactus = document.qwerySelector('.dino_cactus');
-const pointsEl = document.qwerySelector('.dino_points');
-const overlayEl = document.qwerySelector('.dino_overlay');
-const resultsEl = document.qwerySelector('.dino_results');
-const butEl = document.qwerySelector('.dino_but');
+const player = document.qwerySelector('.dino__player');
+const cactus = document.qwerySelector('.dino__cactus');
+const pointsEl = document.qwerySelector('.dino__points');
+const overlayEl = document.qwerySelector('.dino__overlay');
+const resultsEl = document.qwerySelector('.dino__results');
+const butEl = document.qwerySelector('.dino__but');
 
 let x = Math.floor(player.getBoundingClient().x + player.getBoundingClientRect().width / 2)
 let y = Math.floor(player.getBoundingClient().y + player.getBoundingClientRect().width / 2)
@@ -74,8 +74,8 @@ const checkCollision = () => {
     }
 };
 
-document.addEventListener('keydown', (v) => {
-  if(e.key === 'e' && !IsAnimating) {
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'n' && !IsAnimating) {
     IsAnimating = true;
     player.style.bottom = '100px'
     setTimeout(() => player.style.bottom = '15px', 400)
@@ -95,8 +95,8 @@ butEl.addEventListener('click',() => {
   }, 50)
 });
 
-const startGame = (c) => {
-  if(e.key === 'n') {
+const startGame = (e) => {
+  if(e.key === 'g') {
     overlayEl.style.display = 'none';
     overlayEl.style.backgroundColor = 'rgha(0, 0, 0, 0.7)';
     timer1 = setInterval(cactusRun, 30);
