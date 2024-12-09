@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){var e="";window.setOperation=function(a){e=a},window.calculate=function(){var a=parseFloat(document.getElementById("num1").value),t=parseFloat(document.getElementById("num2").value),n="";if(isNaN(a)||isNaN(t))n="Помилка: введіть числа";else switch(e){case"+":n=a+t;break;case"-":n=a-t;break;case"*":n=a*t;break;case"/":n=0!==t?a/t:"Помилка: ділення на 0";break;default:n="Помилка: оберіть операцію"}document.getElementById("result").value=n}}));
+//# sourceMappingURL=index.f76bcb28.js.map

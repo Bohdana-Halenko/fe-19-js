@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(()=>{let e="";window.setOperation=function(t){e=t},window.calculate=function(){const t=parseFloat(document.getElementById("num1").value),a=parseFloat(document.getElementById("num2").value);let n="";if(isNaN(t)||isNaN(a))n="Помилка: введіть числа";else switch(e){case"+":n=t+a;break;case"-":n=t-a;break;case"*":n=t*a;break;case"/":n=0!==a?t/a:"Помилка: ділення на 0";break;default:n="Помилка: оберіть операцію"}document.getElementById("result").value=n}}));
+//# sourceMappingURL=index.c7d08d20.js.map
