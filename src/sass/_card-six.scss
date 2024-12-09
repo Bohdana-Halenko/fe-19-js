@@ -1,7 +1,7 @@
 .dino{ 
     // padding-bottom: 36px; 
     // width: 720px; 
-    margin: 0 auto; 
+    padding-bottom: 36px;
   } 
     .dino__title{ 
         font-weight: 400; 
@@ -9,7 +9,7 @@
         text-align: center; 
     } 
    .dino__container{ 
-        margin-top: 36px; 
+        margin: 0 auto; 
         width: 750px; 
         height: 300px; 
         position: relative; 
