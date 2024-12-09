@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 let operation = ''; 
 
 function setOperation(op) {
@@ -32,4 +33,4 @@ function calculate() {
   }
 
   document.getElementById('result').value = result;
-}
+}}
