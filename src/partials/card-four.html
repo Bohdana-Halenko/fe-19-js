@@ -1,0 +1,17 @@
+<section>
+    <div class="container">
+        <h2>Калькулятор</h2>
+        <div class="calculator">
+          <input type="number" id="num1" placeholder="Введіть число" class="input-field">
+          <div class="operations">
+            <button class="operation-btn" onclick="setOperation('+')">+</button>
+            <button class="operation-btn" onclick="setOperation('-')">-</button>
+            <button class="operation-btn" onclick="setOperation('*')">*</button>
+            <button class="operation-btn" onclick="setOperation('/')">/</button>
+          </div>
+          <input type="number" id="num2" placeholder="Введіть число" class="input-field">
+          <button class="equal-btn" onclick="calculate()">=</button>
+          <input type="text" id="result" placeholder="Результат" class="input-field" readonly>
+        </div>
+      </div>
+</section>
