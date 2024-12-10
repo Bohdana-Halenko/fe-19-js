@@ -1,0 +1,2 @@
+document.getElementById("compareBtn").addEventListener("click",(function(){var t=Math.floor(11*Math.random()),e=parseInt(document.getElementById("userInput").value),n=document.getElementById("resultText");t===e?(n.textContent="Вітаю, ви вгадали число! ".concat(t,"."),n.style.color="#039900"):t!==e?(n.textContent="Ви програли, комп’ютер загадав ".concat(t,"."),n.style.color="#990000"):alert("Enter a number")}));
+//# sourceMappingURL=index.61101599.js.map
