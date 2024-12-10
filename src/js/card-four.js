@@ -34,3 +34,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('result').value = result;
   };
 });
+// const equal = document.querySelector('.calculator__equal-btn');
+// equal.addEventListener('click', calculate());
