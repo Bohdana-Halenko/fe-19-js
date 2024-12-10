@@ -1,55 +1,62 @@
-  .calculator {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  .input-field {
-    width: 150px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .operations {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .operation-btn {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 18px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-  }
-  
-  .operation-btn:hover {
-    background-color: #444;
-  }
-  
-  .equal-btn {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 18px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-  }
-  
-  .equal-btn:hover {
-    background-color: #444;
-  }
+.calculator__title{
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: $text-color;
+  margin-bottom: 36px;
+}
+.calculator__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 38px;
+  align-items: center;
+}
+
+.calculator__input-field {
+  width: 135px;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  background-color: $input-background;
+}
+
+.calculator__input-field:nth-child(5){
+  width: 120px;
+}
+.calculator__operations {
+  width: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calculator__operation-btn {
+  width: 25px;
+  height: 25px;
+  background-color: $button-background;
+  color: $button-text;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator__equal-btn {
+  width: 25px;
+  height: 25px;
+  background-color: $button-background;
+  color: $button-text;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
