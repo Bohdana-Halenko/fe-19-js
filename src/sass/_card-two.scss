@@ -10,9 +10,12 @@
 .game__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 200px;
 }
-
+.game__input_wrap{
+  width: 150px;
+}
 #userInput {
   background-color: $input-background;
   border: none;
@@ -20,6 +23,8 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 1px 3px 0px 1px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  width: 115px;
   outline: none;
   position: relative;
 }
@@ -43,6 +48,11 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 0.3);
-  padding: 6px;
+  padding: 3.5px;
   position: absolute;
+}
+#resultText{
+  width: 233px;
+  font-size: 12px;
+  font-weight: 400;
 }
