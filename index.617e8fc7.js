@@ -1,0 +1,2 @@
+document.getElementById("biggestCheck").addEventListener("click",(function(){const e=document.getElementById("biggestNum1").value,t=document.getElementById("biggestNum2").value,n=document.getElementById("biggestNum3").value,m=[e,t,n].map((e=>{if(!isNaN(e)&&""!==e.trim())return Number(e);document.getElementById("biggestOutp").textContent="Введіть коректні числа"})),g=Math.max(...m);document.getElementById("biggestOutp").textContent=`Найбільше число, яке ви ввели - ${g}`}));
+//# sourceMappingURL=index.617e8fc7.js.map
