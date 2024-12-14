@@ -7,6 +7,8 @@
     background-color: $input-background;
     font-size: 12px;
     font-weight: 400;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    margin-left: 5px;
     
 }
 
@@ -19,7 +21,9 @@
     background-color: $button-background;    
     font-size: 12px;
     font-weight: 400;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
     
+
 }
 
 .time__calculator_btn_icon{
@@ -32,15 +36,13 @@
     color: $text-color;
     text-align: center;
     margin-bottom: 36px;
+    margin-left: 5px;
 }
 
-.time__calculator_menu{
+.time__calculator_menu{    
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    // margin-right: 154px;
     padding-top: 36px;
-    padding-right: 130px;
+    align-items: center;
 }
 
 .time__calculator_text{
@@ -54,10 +56,10 @@
 
 .time__calculator_title_wrap{
     display: flex;
-    justify-content: center;
+    
 }
 
-.time__calculator_container{
-    border-top: 1px solid $line-color;
+.time__calculator_line{
+    margin-left: 75px;
+    margin-right: 68px;
 }
-
