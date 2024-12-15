@@ -14,6 +14,9 @@
         position: relative; 
         overflow: hidden; 
         // background-color: lightblue; 
+        background-image: url(/src/img/desert-img.webp);
+        background-size: cover;
+        background-position: center;
     } 
     .dino__results{ 
         color: white; 
@@ -53,13 +56,13 @@
         position: absolute; 
     } 
     .dino__player{ 
-        width: 50px; 
-        height: 60px; 
+        width: 55px; 
+        height: 58px; 
         transition: all 0.2s; 
         position: absolute; 
         bottom: 15px; 
         left: 100px; 
-        background-color: rgb(83, 86, 94); 
+        background-color: transparent; 
     } 
     .dino__cactus { 
         width: 32px; 
@@ -68,5 +71,5 @@
         position: absolute; 
         bottom: 15px; 
         right: 0; 
-        background-color: rgb(79, 77, 86); 
+        background-color: transparent; 
     }
