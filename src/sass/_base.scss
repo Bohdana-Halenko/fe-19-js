@@ -58,3 +58,11 @@ button{
     background-color: $light-background;    
     transition: background-color 0.2s ease;
 }
+
+.section__line{
+    width: 536px;
+    height: 1px;
+    background-color: $line-color;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}

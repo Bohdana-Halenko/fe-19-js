@@ -1,5 +1,5 @@
 .footboll__container{
-    border-top: 1px solid $line-color;
+    
     padding-top: 36px;
     padding-bottom: 36px;
     
@@ -32,4 +32,13 @@
     background-color: red;
     border-radius: 50%;
     transition: transform 0.5s ease;
+    }
+
+    .time__calculator-container{
+        
+    }
+
+    .time__calculator-box{
+        width: 630px;
+        margin: 0 auto;
     }
