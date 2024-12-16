@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelectorAll(".gallery__card"),t=document.querySelector(".carousel__btn-left"),n=document.querySelector(".carousel__btn-right"),c=0;function o(t){e.forEach((function(e,n){e.classList.toggle("active",n===t)}))}t.addEventListener("click",(function(){o(c=(c-1+e.length)%e.length)})),n.addEventListener("click",(function(){o(c=(c+1)%e.length)})),o(c)}));
+//# sourceMappingURL=index.552fb622.js.map
