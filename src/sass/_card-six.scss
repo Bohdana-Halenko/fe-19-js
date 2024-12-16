@@ -1,11 +1,11 @@
 .dino{ 
-    // padding-bottom: 36px; 
-    // width: 720px; 
+
   } 
     .dino__title{ 
         font-weight: 400; 
         font-size: 16px; 
         text-align: center; 
+        margin-bottom: 36px;
     } 
    .dino__container{ 
         margin: 0 auto; 
@@ -13,7 +13,7 @@
         height: 300px; 
         position: relative; 
         overflow: hidden; 
-        // background-color: lightblue; 
+
         background-image: url(/src/img/desert-img.webp);
         background-size: cover;
         background-position: center;

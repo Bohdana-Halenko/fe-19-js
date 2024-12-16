@@ -150,7 +150,8 @@ input:checked + .header__slider:before {
   background-color: $light-background;
   background-image: url(/src/img/footer-modal-back.png);
   background-repeat: no-repeat;
-  background-position: center bottom 56px;
+  background-position: center;
+  background-size: contain;
 }
 .header__close-modal-btn{
   background-color: transparent;
